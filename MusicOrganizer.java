@@ -104,4 +104,12 @@ public class MusicOrganizer
             System.out.println("Palabra no encontrada");
         }
     }
+    
+    public void playSampleLesArtist(String artista){
+        for(String filename : files){
+            if (filename.contains(artista)){
+                player.playSample(filename);
+            }
+        }
+    }
 }
