@@ -90,4 +90,12 @@ public class MusicOrganizer
             posicion = posicion + 1;
         }
     }
+    
+    public void listMatching(String buscarString){
+        for(String filename : files){
+            if(filename.contains(buscarString)){
+                System.out.println(filename);
+            }
+        }
+    }
 }
